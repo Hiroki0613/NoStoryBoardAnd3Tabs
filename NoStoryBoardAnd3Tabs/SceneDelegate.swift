@@ -18,9 +18,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //didFinishLaunchingOptionと同じもの
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+        //ナビゲーションコントローラーNCをそれぞれのViewControllerにembedIn(意味は”埋め込み”)
+        let HappyNC = UINavigationController(rootViewController: HappyVC())
+        let TabNC = UINavigationController(rootViewController: TabVC())
+        let GraceNC = UINavigationController(rootViewController: GraceVC())
+        
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = HappyViewController()
+        window?.rootViewController = HappyNC
         window?.makeKeyAndVisible()
     }
 

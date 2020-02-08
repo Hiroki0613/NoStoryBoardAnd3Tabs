@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HappyViewController: UIViewController {
+class HappyVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

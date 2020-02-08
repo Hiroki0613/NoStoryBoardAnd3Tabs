@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		7F4EECDA23EE72870060E8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EECD923EE72870060E8BD /* AppDelegate.swift */; };
 		7F4EECDC23EE72870060E8BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EECDB23EE72870060E8BD /* SceneDelegate.swift */; };
-		7F4EECDE23EE72870060E8BD /* HappyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EECDD23EE72870060E8BD /* HappyViewController.swift */; };
+		7F4EECDE23EE72870060E8BD /* HappyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EECDD23EE72870060E8BD /* HappyVC.swift */; };
 		7F4EECE323EE72880060E8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F4EECE223EE72880060E8BD /* Assets.xcassets */; };
 		7F4EECE623EE72880060E8BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4EECE423EE72880060E8BD /* LaunchScreen.storyboard */; };
+		7F4EECEE23EE796B0060E8BD /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EECED23EE796B0060E8BD /* TabVC.swift */; };
+		7F4EECF023EE7C990060E8BD /* GraceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4EECEF23EE7C990060E8BD /* GraceVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F4EECD623EE72870060E8BD /* NoStoryBoardAnd3Tabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoStoryBoardAnd3Tabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4EECD923EE72870060E8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F4EECDB23EE72870060E8BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F4EECDD23EE72870060E8BD /* HappyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyViewController.swift; sourceTree = "<group>"; };
+		7F4EECDD23EE72870060E8BD /* HappyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyVC.swift; sourceTree = "<group>"; };
 		7F4EECE223EE72880060E8BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F4EECE523EE72880060E8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F4EECE723EE72880060E8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F4EECED23EE796B0060E8BD /* TabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
+		7F4EECEF23EE7C990060E8BD /* GraceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraceVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,9 @@
 			children = (
 				7F4EECD923EE72870060E8BD /* AppDelegate.swift */,
 				7F4EECDB23EE72870060E8BD /* SceneDelegate.swift */,
-				7F4EECDD23EE72870060E8BD /* HappyViewController.swift */,
+				7F4EECDD23EE72870060E8BD /* HappyVC.swift */,
+				7F4EECED23EE796B0060E8BD /* TabVC.swift */,
+				7F4EECEF23EE7C990060E8BD /* GraceVC.swift */,
 				7F4EECE223EE72880060E8BD /* Assets.xcassets */,
 				7F4EECE423EE72880060E8BD /* LaunchScreen.storyboard */,
 				7F4EECE723EE72880060E8BD /* Info.plist */,
@@ -134,8 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F4EECDE23EE72870060E8BD /* HappyViewController.swift in Sources */,
+				7F4EECDE23EE72870060E8BD /* HappyVC.swift in Sources */,
+				7F4EECF023EE7C990060E8BD /* GraceVC.swift in Sources */,
 				7F4EECDA23EE72870060E8BD /* AppDelegate.swift in Sources */,
+				7F4EECEE23EE796B0060E8BD /* TabVC.swift in Sources */,
 				7F4EECDC23EE72870060E8BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

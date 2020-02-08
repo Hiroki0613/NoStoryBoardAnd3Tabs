@@ -19,15 +19,60 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         //ナビゲーションコントローラーNCをそれぞれのViewControllerにembedIn(意味は”埋め込み”)
-        let HappyNC = UINavigationController(rootViewController: HappyVC())
-        let TabNC = UINavigationController(rootViewController: TabVC())
-        let GraceNC = UINavigationController(rootViewController: GraceVC())
+        //let HappyNC = UINavigationController(rootViewController: HappyVC())
+        //let TabNC = UINavigationController(rootViewController: TabVC())
+        //let GraceNC = UINavigationController(rootViewController: GraceVC())
+        
+        //タブにそれぞれのNavigationControllerを割り当てている
+        //let tabbar = UITabBarController()
+        //tabbar.viewControllers = [HappyNC, TabNC ,GraceNC]
+    
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = HappyNC
+        window?.rootViewController = createTabbar()
         window?.makeKeyAndVisible()
     }
+    
+    //ナビゲーションコントローラーNCをそれぞれのViewControllerにembedIn(意味は”埋め込み”)
+    //その際に、titleとtabBarItemを追加で実装
+    func createHappyNC() -> UINavigationController {
+        let happyVC = HappyVC()
+        happyVC.title = "Happy"
+        happyVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        
+        return UINavigationController(rootViewController: happyVC)
+    }
+    
+    func createTabNC() -> UINavigationController {
+        let tabVC = TabVC()
+        tabVC.title = "Tab"
+        tabVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+
+        return UINavigationController(rootViewController: tabVC)
+    }
+    
+    
+    func createGraceNC() -> UINavigationController {
+        let graceVC = GraceVC()
+        graceVC.title = "Grace"
+        graceVC.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 2)
+        
+        return UINavigationController(rootViewController: graceVC)
+    }
+    
+    
+    func createTabbar() -> UITabBarController {
+        //tabarをインスタンス化
+        let tabbar = UITabBarController()
+        //タブバーの色を緑色に変更する
+        UITabBar.appearance().tintColor = .systemGreen
+        //tabbarにつけるViewControllerを実装
+        tabbar.viewControllers = [createHappyNC(), createTabNC(), createGraceNC()]
+        
+        return tabbar
+    }
+    
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
